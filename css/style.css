@@ -1,0 +1,141 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  box-sizing: border-box; }
+
+.displayOn {
+  display: block; }
+
+.heading-1 {
+  font-size: 1.6rem;
+  text-align: center; }
+
+.heading-2 {
+  font-size: 1.6rem;
+  text-align: center; }
+
+.form-input {
+  border: solid rgba(0, 0, 0, 0.5) 1px;
+  padding: .8rem 1rem;
+  margin: 1rem 0rem; }
+
+.form-input-full {
+  width: 100%; }
+  .form-input-full .input {
+    width: 100%; }
+
+.form-input-half {
+  width: 100%;
+  display: flex; }
+  .form-input-half .input-1 {
+    width: 48%;
+    margin-right: 2%; }
+  .form-input-half .input-2 {
+    width: 48%;
+    margin-left: 2%; }
+
+.form-submit {
+  background-color: blue;
+  padding: 1rem 1.5rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  text-align: center;
+  display: block; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: white; }
+  .header .main {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 5rem; }
+    .header .main .logo-box {
+      width: 20rem;
+      height: 8rem; }
+      .header .main .logo-box img {
+        width: 100%; }
+    .header .main .action {
+      display: flex;
+      align-items: center;
+      font-size: 1.4rem; }
+      .header .main .action .name {
+        color: black;
+        margin-right: 4rem; }
+      .header .main .action .log-button {
+        background-color: blue;
+        padding: .5rem 1.5rem;
+        color: white;
+        cursor: pointer; }
+  .header .nav {
+    display: none;
+    border-top: solid rgba(0, 0, 0, 0.5) 1px;
+    border-bottom: solid rgba(0, 0, 0, 0.5) 1px; }
+    .header .nav .menu {
+      display: flex;
+      margin-left: 5rem;
+      margin-right: 5rem;
+      padding-top: .5rem; }
+      .header .nav .menu .menu-item {
+        list-style: none;
+        padding: .5rem 2.5rem;
+        font-size: 1.4rem;
+        cursor: pointer;
+        color: #aaa; }
+      .header .nav .menu .active {
+        color: #000 !important; }
+
+.main .signup {
+  display: none;
+  margin-top: 15rem;
+  margin-bottom: 8rem; }
+  .main .signup .signup-form {
+    width: 50rem;
+    margin: 0 auto;
+    font-size: 1.4rem; }
+  .main .signup label {
+    margin-top: 2.5rem;
+    padding-top: 2.5rem; }
+
+.main .login {
+  display: none;
+  margin-top: 15rem;
+  margin-bottom: 8rem; }
+  .main .login .login-form {
+    width: 50rem;
+    margin: 0 auto;
+    font-size: 1.4rem; }
+
+.main .home {
+  display: none;
+  margin-top: 15rem; }
+
+.main .order {
+  display: none;
+  margin-top: 15rem; }
+
+.main .setting {
+  display: none;
+  margin-top: 15rem; }
+
+.main .error {
+  display: none; }

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="ui-init.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meat</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <section class="header">
+            <div class="main">
+                <div class="logo-box">
+                    <img src="" alt="" class="logo">
+                </div>
+                <div class="action">
+                    <div class="name">Danish Ahmed</div>
+                    <div class="log-button">Login</div>
+                </div>
+            </div>
+            <div class="nav">
+                <ul class="menu">
+                    <li id="menu-home" class="menu-item active">Home</li>
+                    <li id="menu-order" class="menu-item">Orders</li>
+                    <li id="menu-setting" class="menu-item">Setting</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="main">
+            <div class="signup">
+                <div class="heading-2 signup-text">Create a new inventory</div>
+                <form class="form signup-form" onsubmit="return inventorySignup()">
+                    <div class="form-input-full">
+                        <input id="signup-email" placeholder="Email" autocomplete="off" type="text" class="form-input input">
+                    </div>
+                    <div class="form-input-full">
+                        <input id="signup-password" placeholder="Password" autocomplete="off" type="password" class="form-input input">
+                    </div>
+                    <div class="form-input-full">
+                        <input id="signup-address" placeholder="Address" autocomplete="off" type="text" class="form-input input">
+                    </div>
+                    <div class="form-input-half">
+                        <input id="signup-country" placeholder="Country" autocomplete="off" type="text" class="form-input input-1">
+                        <input id="signup-state" placeholder="State" autocomplete="off" type="text" class="form-input input-2">
+                    </div>
+                    <div class="form-input-half">
+                        <input id="signup-city" placeholder="City" autocomplete="off" type="text" class="form-input input-1">
+                        <input id="signup-zip" placeholder="Pincode" autocomplete="off" type="text" class="form-input input-2">
+                    </div>
+                    <div class="form-input-half">
+                        <input id="signup-lat" placeholder="Latitude" autocomplete="off" type="text" class="form-input input-1">
+                        <input id="signup-lng" placeholder="Longitude" autocomplete="off" type="text" class="form-input input-2">
+                    </div>
+                    <div class="form-input-full">
+                        <input id="signup-code" placeholder="Secret code" autocomplete="off" type="text" class="form-input input">
+                    </div>
+                    <input type="submit" value="Signup" class="form-signup-submit form-submit">
+                </form>
+            </div>
+
+            <div class="login">
+                <div class="heading-2 login-text">Login to your inventory</div>
+                <form class="form login-form" onsubmit="return inventoryLogin()">
+                    <div class="form-input-full">
+                        <input id="login-email" placeholder="Email" autocomplete="off" type="text" class="form-input input">
+                    </div>
+                    <div class="form-input-full">
+                        <input id="login-password" placeholder="Password" autocomplete="off" type="password" class="form-input input">
+                    </div>
+                    <input type="submit" value="Login" class="form-submit form-login-submit"> 
+                </form>
+            </div>
+
+            <div class="home">
+                home
+            </div>
+
+            <div class="order">
+                order
+            </div>
+
+            <div class="setting">
+                setting
+            </div>
+
+            <div class="error">
+                error
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="task"></div>
+            <div class="error"></div>
+        </section>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+
+    <!-- Add SDKs for Firebase products that are used
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-messaging.js"></script>
+
+    <script src="firebase-init.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
